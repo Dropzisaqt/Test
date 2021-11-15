@@ -451,7 +451,7 @@ window.snake.scheme = function(settings = {}) {
             eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
             eval(`var ca_ = new Image(); ca_.src = 'https://i.postimg.cc/RCDVL7Bf/index.png';`);
             eval(`var do_ = new Image(); do_.src = 'https://i.postimg.cc/rsrbW0x6/dog.png';`);
-            eval(`var eg_ = new Image(); eg_.src = 'https://i.postimg.cc/Y2Jjkgbf/imageedit-3-3045804151-128x128.png';`);
+            eval(`var eg_ = new Image(); eg_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
             eval(`var li_ = new Image(); li_.src = 'http://www.simpleimageresizer.com/_uploads/photos/6a9b0706/Block_of_Diamond_JE6_BE3_64x64.png';`);
             eval(`var pe_ = new Image(); pe_.src = 'https://i.postimg.cc/BQqHMbDc/redpepper.png';`);
             eval(
