@@ -462,7 +462,7 @@ window.snake.scheme = function(settings = {}) {
                 '{',
                 `{
                   if(a.path && a.path.includes('apple') && [...document.querySelector('#apple').children].indexOf(document.getElementsByClassName('DqMRee tuJOWd')[0]) > 21)
-                    return document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64') 
+                    return document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64.png') 
                       ? bu_ 
                     : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64') 
                       ? ca_ 
