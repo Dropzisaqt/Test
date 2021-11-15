@@ -410,7 +410,7 @@ window.snake.scheme = function(settings = {}) {
             dia.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
             dia.width = burg.height = 47;
             dia.className = 'DqMRee SsAred';
-
+          }
             if(document.querySelector('#apple').childElementCount > 21)
               for(let i = document.querySelector('#apple').childElementCount - 1; i >= 22; i--)
                 document.querySelector('#apple').removeChild(document.querySelector('#apple').children[i]);
