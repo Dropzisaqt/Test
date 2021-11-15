@@ -449,11 +449,11 @@ window.snake.scheme = function(settings = {}) {
 
 
             eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
-            eval(`var ca_ = new Image(); ca_.src = 'https://i.postimg.cc/RCDVL7Bf/index.png';`);
-            eval(`var do_ = new Image(); do_.src = 'https://i.postimg.cc/rsrbW0x6/dog.png';`);
+            eval(`var ca_ = new Image(); ca_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
+            eval(`var do_ = new Image(); do_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
             eval(`var eg_ = new Image(); eg_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
-            eval(`var li_ = new Image(); li_.src = 'http://www.simpleimageresizer.com/_uploads/photos/6a9b0706/Block_of_Diamond_JE6_BE3_64x64.png';`);
-            eval(`var pe_ = new Image(); pe_.src = 'https://i.postimg.cc/BQqHMbDc/redpepper.png';`);
+            eval(`var li_ = new Image(); li_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
+            eval(`var pe_ = new Image(); pe_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
             eval(
               code.match(
                 /[a-zA-Z0-9_$]{1,8}=function\(a\){return a\.[a-zA-Z0-9_$]{1,8}\.canvas}/
@@ -463,13 +463,13 @@ window.snake.scheme = function(settings = {}) {
                   if(a.path && a.path.includes('apple') && [...document.querySelector('#apple').children].indexOf(document.getElementsByClassName('DqMRee tuJOWd')[0]) > 21)
                     return document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64') 
                       ? bu_ 
-                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('index') 
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64') 
                       ? ca_ 
-                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('dog')
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64')
                       ? do_ 
-                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('lime')
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64')
                       ? li_
-                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('pepper')
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('Block-of-Diamond-JE6-BE3-64x64')
                       ? pe_
                     : eg_;
                   
