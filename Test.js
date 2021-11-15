@@ -410,7 +410,30 @@ window.snake.scheme = function(settings = {}) {
             burg.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
             burg.width = burg.height = 47;
             burg.className = 'DqMRee SsAred';
+                        let cact = new Image();
+            cact.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            cact.width = cact.height = 47;
+            cact.className = 'DqMRee SsAred';
 
+            let dog = new Image();
+            dog.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            dog.width = dog.height = 47;
+            dog.className = 'DqMRee SsAred';
+
+            let egg = new Image();
+            egg.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            egg.width = egg.height = 47;
+            egg.className = 'DqMRee SsAred';
+
+            let lime = new Image();
+            lime.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            lime.width = lime.height = 47;
+            lime.className = 'DqMRee SsAred';
+
+            let pepper = new Image();
+            pepper.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            pepper.width = pepper.height = 47;
+            pepper.className = 'DqMRee SsAred';
 
 
             if(document.querySelector('#apple').childElementCount > 21)
