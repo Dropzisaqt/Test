@@ -405,20 +405,32 @@ window.snake.scheme = function(settings = {}) {
             )
           );
           
-          if(settings.dia) {
-            let dia = new Image();
-            dia.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
-            dia.width = burg.height = 47;
-            dia.className = 'DqMRee SsAred';
-          }
+          if(settings.burger || settings.cactus || settings.hotdog || settings.egg || settings.lime || settings.red_pepper) {
+            let burg = new Image();
+            burg.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
+            burg.width = burg.height = 47;
+            burg.className = 'DqMRee SsAred';
+
+
+
             if(document.querySelector('#apple').childElementCount > 21)
               for(let i = document.querySelector('#apple').childElementCount - 1; i >= 22; i--)
                 document.querySelector('#apple').removeChild(document.querySelector('#apple').children[i]);
 
-            settings.dia     && document.querySelector('#apple').appendChild(burg);;
+            settings.burger     && document.querySelector('#apple').appendChild(burg);
+            settings.cactus     && document.querySelector('#apple').appendChild(cact);
+            settings.hotdog     && document.querySelector('#apple').appendChild(dog);
+            settings.egg        && document.querySelector('#apple').appendChild(egg);
+            settings.lime       && document.querySelector('#apple').appendChild(lime);
+            settings.red_pepper && document.querySelector('#apple').appendChild(pepper);
 
 
-            eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`)
+            eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';`);
+            eval(`var ca_ = new Image(); ca_.src = 'https://i.postimg.cc/RCDVL7Bf/index.png';`);
+            eval(`var do_ = new Image(); do_.src = 'https://i.postimg.cc/rsrbW0x6/dog.png';`);
+            eval(`var eg_ = new Image(); eg_.src = 'https://i.postimg.cc/Y2Jjkgbf/imageedit-3-3045804151-128x128.png';`);
+            eval(`var li_ = new Image(); li_.src = 'http://www.simpleimageresizer.com/_uploads/photos/6a9b0706/Block_of_Diamond_JE6_BE3_64x64.png';`);
+            eval(`var pe_ = new Image(); pe_.src = 'https://i.postimg.cc/BQqHMbDc/redpepper.png';`);
             eval(
               code.match(
                 /[a-zA-Z0-9_$]{1,8}=function\(a\){return a\.[a-zA-Z0-9_$]{1,8}\.canvas}/
@@ -428,6 +440,15 @@ window.snake.scheme = function(settings = {}) {
                   if(a.path && a.path.includes('apple') && [...document.querySelector('#apple').children].indexOf(document.getElementsByClassName('DqMRee tuJOWd')[0]) > 21)
                     return document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('porga') 
                       ? bu_ 
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('index') 
+                      ? ca_ 
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('dog')
+                      ? do_ 
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('lime')
+                      ? li_
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('pepper')
+                      ? pe_
+                    : eg_;
                   
                   
                 `
@@ -439,7 +460,7 @@ window.snake.scheme = function(settings = {}) {
                 /[a-zA-Z0-9_$]{1,8}\.prototype\.[a-zA-Z0-9_$]{1,8}=function\(\){[^}]*?apple[^]*?el\(\)\)}}/
               )[0].replace(
                 'Math.floor(21*Math.random());',
-                `Math.floor((21 + ~~${settings.burger} * Math.random());`
+                `Math.floor((21 + ~~${settings.burger} + ~~${settings.cactus} + ~~${settings.hotdog} + ~~${settings.egg} + ~~${settings.lime} + ~~${settings.red_pepper}) * Math.random());`
               )
             );
           }
