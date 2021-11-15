@@ -422,7 +422,7 @@ window.snake.scheme = function(settings = {}) {
             dog.className = 'DqMRee SsAred';
 
             let egg = new Image();
-            egg.src = 'https://i.postimg.cc/501jDL9g/eg.png';
+            egg.src = 'https://i.postimg.cc/Y2Jjkgbf/imageedit-3-3045804151-128x128.png';
             egg.width = egg.height = 47;
             egg.className = 'DqMRee SsAred';
 
@@ -448,10 +448,10 @@ window.snake.scheme = function(settings = {}) {
             settings.red_pepper && document.querySelector('#apple').appendChild(pepper);
 
 
-            eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/B6ycxmBb/porga.png';`);
+            eval(`var bu_ = new Image(); bu_.src = 'https://i.postimg.cc/Y2Jjkgbf/imageedit-3-3045804151-128x128.png';`);
             eval(`var ca_ = new Image(); ca_.src = 'https://i.postimg.cc/RCDVL7Bf/index.png';`);
             eval(`var do_ = new Image(); do_.src = 'https://i.postimg.cc/rsrbW0x6/dog.png';`);
-            eval(`var eg_ = new Image(); eg_.src = 'https://i.postimg.cc/501jDL9g/eg.png';`);
+            eval(`var eg_ = new Image(); eg_.src = 'https://raw.githubusercontent.com/Dropzisaqt/Test/main/Test.js?token=AQXCIQ44OBMSCNGFSXM2W5DBSJSJC';`);
             eval(`var li_ = new Image(); li_.src = 'https://i.postimg.cc/k5kWcyFB/lime.png';`);
             eval(`var pe_ = new Image(); pe_.src = 'https://i.postimg.cc/BQqHMbDc/redpepper.png';`);
             eval(
