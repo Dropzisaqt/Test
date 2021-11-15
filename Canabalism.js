@@ -468,7 +468,7 @@ window.snake.scheme = function(settings = {}) {
                       ? ca_ 
                     : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64')
                       ? do_ 
-                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64)
+                    : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64')
                       ? li_
                     : document.querySelector('#apple').getElementsByClassName('DqMRee tuJOWd')[0].src.includes('unnamed-64x64')
                       ? pe_
