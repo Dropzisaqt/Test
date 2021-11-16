@@ -1,4 +1,40 @@
-          if(settings.burger || settings.cactus || settings.hotdog || settings.egg || settings.lime || settings.red_pepper) {
+window.snake.scheme = function(settings = {}) {
+  if(settings.score_bar === undefined)
+    settings.score_bar = settings.scoreBar || '#4A752C';
+  if(settings.borders === undefined)
+    settings.borders = '#578A34';
+  if(settings.walls === undefined)
+    settings.walls = settings.borders;
+  if(settings.shadows === undefined)
+    settings.shadows = '#94BD46';
+  if(settings.light_squares === undefined)
+    settings.light_squares = settings.lightSquares || '#AAD751';
+  if(settings.dark_squares === undefined)
+    settings.dark_squares = settings.darkSquares || '#A2D149';
+  if(settings.sky === undefined)
+    settings.sky = '#4DC1F9';
+  if(settings.separators === undefined)
+    settings.separators = '#87CEFA';
+  if(settings.buttons === undefined)
+    settings.buttons = '#1155CC';
+  if(settings.light_goal === undefined) {
+    let f = settings.light_squares;
+    f = f.replace('#', '');
+    let { h, s, v, } = rgb_to_hsv({
+      r: parseInt(f.substring(0, 2), 16),
+      g: parseInt(f.substring(2, 4), 16),
+      b: parseInt(f.substring(4, 6), 16),
+    });
+    s += 0.03;
+    v += 0.07;
+    s = s > 1 ? 1 : s;
+    v = v > 1 ? 1 : v;
+
+    let { r, g, b, } = hsv_to_rgb({ h: h, s: s, v: v, });
+    settings.light_goal = '#' + (~~r).toString(16) + (~~g).toString(16) + (~~b).toString(16);
+  }
+          
+      if(settings.burger || settings.cactus || settings.hotdog || settings.egg || settings.lime || settings.red_pepper) {
             let burg = new Image();
             burg.src = 'https://i.postimg.cc/CxVysC41/Block-of-Diamond-JE6-BE3-64x64.png';
             burg.width = burg.height = 47;
@@ -80,3 +116,8 @@
               )
             );
           }
+window.snake.dark = function() {
+  return window.snake.scheme({
+    burger:        true,
+  });
+};
